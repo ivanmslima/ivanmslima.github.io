@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <title>Ivan Marcio Da Silva Lima</title>
+
+    <style>
+        @media screen and (max-width: 650px) {
+            .topo .menu { height: 50px; }
+            .topo .conteudo-topo .foto { width: 45%; margin-right: 27%; }
+
+            .formacao { margin-bottom: 80px; height: 280px; margin-bottom: 10px; }
+            .formacao .formacao-1 { width: 100%; height: 130px;; display: inline-block;  }
+            .formacao .formacao-2 { width: 100%; height: 130px; float: right; }
+
+            .interesses { height: 200px;}
+        }
+    </style>
+
+</head>
+<body>
+    <div class="topo">
+        <div class="menu">
+            <ul>
+                <li>
+                    <a type="button" id="btn-trocar" href="#">Trocar Cor</a>
+                </li>
+                <li>
+                    <a href="#dados-pessoais">Dados</a>
+                </li>
+                <li>
+                    <a href="#experiencias-profissionais">Experiências</a>
+                </li>
+                <li>
+                    <a href="#formacao">Formação</a>
+                </li>
+                <li>
+                    <a href="#habilidades">Habilidades</a>
+                </li>
+                <li>
+                    <a href="#idiomas">Idiomas</a>
+                </li>
+                <li>
+                    <a href="#interesses">Interesses</a>
+                </li>
+            </ul>
+        </div>
+        <div class="conteudo">
+            <div class="conteudo-topo">
+                <div class="nome">
+                    <h1>Ivan Lima</h1>
+                </div>
+                <div class="foto">
+            
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="conteudo">
+        <span id="dados-pessoais"></span>
+        <div class="dados-pessoais">
+            <div class="dados-texto">
+                <h2>DADOS PESSOAIS</h2>
+                <p>Idade: 33 Anos</p>
+                
+                
+                <p>Celular: (11) 97020-4867</p>
+            </div>
+            <div class="icones">
+                <a target="_blank" href="https://www.linkedin.com/in/ivan-lima-7a29a732/"> <img src="linkedin.png" alt="Ivan Lima"> </a>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <span id="experiencias-profissionais"></span>
+        <div class="experiencias" id="experiencia">
+            <div class="titulo">
+                Experiências Profissionais
+            </div>
+            <div id="experiencias-desc" class="info">
+                
+            </div>
+            <br > <br> <hr>
+        </div>
+
+        <span id="formacao"></span>
+        <div class="formacao">
+            <div class="formacao-titulo">
+                <p>Formação Acadêmica</p>
+            </div>
+            <div class="formacao-1">
+                <p class="titulo">Desenvolvimento web</p>
+                <p class="texto">Escola Senai Nadir Dias de Figueiredo </p>
+                <p class="texto">Início: 11/2020</p>
+                <p class="texto">Previsão de Conclusão: 04/2022</p>
+            </div>
+            
+        </div>
+        <br > <hr>
+        
+        <span id="habilidades"></span>
+        <div class="habilidades" id="habilidades">
+            <div class="titulo">
+                    Habilidades Técnicas
+            </div>
+            <div class="info-habilidades">
+                <ul id="lista-habilidades">
+
+                </ul>
+            </div>
+        </div>
+        <br> <hr>
+        <span id="idiomas"></span>
+        <div class="idiomas">
+            <p class="titulo">Idiomas</p>
+            <p class="texto">Inglês: Técnico</p>
+        </div>
+        <br > <br> <hr>
+
+        <span id="interesses"></span>
+        <div class="interesses">
+            <p class="titulo">Interesses Profissionais</p>
+            <p class="texto">Busco uma vaga no mercado onde possa colocar minhas habilidades em prática e colaborar com equipes de trabalho, tendo o crescimento da organização e o desenvolvimento pessoal e profissional como focos principais. Tenho interesse nas areas de Desenvolvimento back-end e front-end e mais a frente me inserir na área de Gestão de Projetos.</p>
+        </div>
+    </div>
+    <div class="rodape">
+        <ul>
+            <li>
+                <a href="https://api.whatsapp.com/send?phone=5511970204867">(11) 97020-4867</a>
+            </li>
+            <li>
+                <a href="#"> ivanmslima@gmail.com</a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+<script>
+// var btn = document.getElementById('btn-trocar')
+
+// btn.addEventListener('click', function(){
+//     console.log("clicou")
+//     var link = document.querySelector('link')
+//     console.log(link)
+//     var last_url = link.getAttribute('href')
+//     console.log(last_url)
+//     if (last_url == "style1.css")
+//         url = "style2.css"
+//     else
+//         url = "style1.css"
+    
+//     console.log(url)
+//     link.setAttribute('href',url)
+// });
+
+// var experiencias = document.getElementById('experiencias-desc')
+// var ul = document.getElementById('lista-habilidades')
+
+// var xhttp = new XMLHttpRequest();
+// xhttp.onreadystatechange = function() {
+//     if (this.readyState == 4 && this.status == 200) {
+//         carregaDados(JSON.parse(xhttp.responseText))
+//     }
+// }
+// xhttp.open("GET", "http://demo0925199.mockable.io/", true);
+// xhttp.send();
+
+// function carregaDados(dados){
+//     for( var i = 0; i < Object.keys(dados.experiencias).length; i++){
+//         var div_experiencia = document.createElement("div")
+//         var p_empresa = document.createElement("p")
+//         var p_periodo = document.createElement("p")
+//         var p_atribuicoes = document.createElement("p")
+//         p_empresa.textContent = "Empresa: " + dados.experiencias[i].empresa
+//         p_periodo.textContent = "Período: " + dados.experiencias[i].periodo
+//         p_atribuicoes.textContent = "Atribuições: " + dados.experiencias[i].atribuicoes
+
+//         div_experiencia.appendChild(p_empresa)
+//         div_experiencia.appendChild(p_periodo)
+//         div_experiencia.appendChild(p_atribuicoes)
+//         experiencias.appendChild(div_experiencia)
+//     }
+
+//     for( var i = 0; i < Object.keys(dados.habilidades).length; i++){
+
+//         var li = document.createElement("li")
+//         var li_habilidade = document.createElement("span")
+//         var li_nivel = document.createElement("small")
+//         li_habilidade.textContent = dados.habilidades[i].habilidade
+//         li_nivel.textContent = " - " + dados.habilidades[i].nivel
+        
+//         li.appendChild(li_habilidade)
+//         li.appendChild(li_nivel)
+//         ul.appendChild(li)
+//     }
+// }
+</script>
+<script src="curriculo.js"></script>
+</html>
